@@ -14,17 +14,15 @@
 
 [iOS 앱이 동작하는 방법 (App's Life Cycle)](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/iOS_%EC%95%B1%EC%9D%B4_%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95.md)
 
-MVC 패턴
+뷰의 역할 및 그리는 방법(+ UIViewController Life Cycle)
 
-iOS에서 뷰의 역할 및 그리는 방법
+Model, View 사이의 관계 (MVC 디자인 패턴)
 
-앱 개발시 Model, View 사이의 관계
+오토레이아웃(AutoLayout)
 
-오토레이아웃 이해하기
+리스트 및 그리드 기본
 
-iOS에서 리스트 및 그리드 기본
-
-iOS에서 앱내 하단 탭바 이해하기
+앱내 하단 탭바
 
 [리스트 및 그리드 응용](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EB%B0%8F_%EA%B7%B8%EB%A6%AC%EB%93%9C_%EC%9D%91%EC%9A%A9.md)
 
