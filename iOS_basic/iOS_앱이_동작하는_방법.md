@@ -22,4 +22,6 @@ UIKit은 각각에 대해 별도의 수명 주기 이벤트를 제공합니다. 
 
 The following figure shows the state transitions for scenes. When the user or system requests a new scene for your app, UIKit creates it and puts it in the unattached state. User-requested scenes move quickly to the foreground, where they appear onscreen. A system-requested scene typically moves to the background so that it can process an event. For example, the system might launch the scene in the background to process a location event. When the user dismisses your app's UI, UIKit moves the associated scene to the background state and eventually to the suspended state. UIKit can disconnect a background or suspended scene at any time to reclaim its resources, returning that scene to the unattached state.
 
-![image](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/scene-state.png)
+<!-- ![image](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/scene-state.png) -->
+
+<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/scene-state.png" width="400">
