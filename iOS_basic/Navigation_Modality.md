@@ -89,6 +89,13 @@ Uses custom animation to present content in a custom container.
 
 | 결국 여러 스타일을 나누긴 했지만, 앱내에서는 각 스타일을 복합적으로 사용함
 
+<br>
+
+### 구현 
+
+- 탭바 (**`TabbarController`**)
+- 네비게이션 컨트롤러 (**`NavigationController`**)
+
 
 
 <br>
