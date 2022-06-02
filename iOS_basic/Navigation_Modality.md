@@ -3,7 +3,7 @@
 ## Modality
 
 <div style="text-align : center;">
-<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/Modality.png" width="400">
+    <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/Modality.png" width="400">
 </div>
 
 콘텐츠를 임시적으로 표시하는 디자인 기법 <br>
@@ -45,10 +45,13 @@ Uses custom animation to present content in a custom container.
 ### 구현
 뷰컨트롤러의  **`present(_:animated:completion:)`**  메소드를 사용
 
+<br>
 
 ## Navigation
 보통 사용자들은 앱의 기능을 탐색할때, 타고 타고 들어가다가 빠져 나올때 당황하거나 어려움을 겪는 경향이 있음 <br>
 이때 Navigation은 사용자가 당황하지 않게끔, 자연스럽게 지나왔던 곳을 돌아가게끔 도와주는 것
+
+<br>
 
 ### iOS에서 주요 네비게이션 스타일 3가지
 1. Hierarchical Navigation
