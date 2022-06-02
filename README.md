@@ -20,13 +20,15 @@
 
 오토레이아웃(AutoLayout)
 
-리스트 및 그리드 기본 (UITableView & UICollectionView)
+[리스트 및 그리드 기본 (UITableView & UICollectionView)](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EB%B0%8F_%EA%B7%B8%EB%A6%AC%EB%93%9C_%EA%B8%B0%EB%B3%B8.md)
 
 앱내 하단 탭바
 
 [리스트 및 그리드 응용](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EB%B0%8F_%EA%B7%B8%EB%A6%AC%EB%93%9C_%EC%9D%91%EC%9A%A9.md)
 
-네비게이션과 모달
+[네비게이션과 모달 (Navigation & Modality)](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/Navigation_Modality.md)
+
+[HIG(Human Interface Guidelines)](https://developer.apple.com/design/human-interface-guidelines/)
 
 <br>
 
