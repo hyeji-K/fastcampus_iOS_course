@@ -2,7 +2,7 @@
 
 ## Modality
 
-<div style="text-align : center;">
+<div align="center">
     <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/Modality.png" width="400">
 </div>
 
@@ -55,7 +55,7 @@ Uses custom animation to present content in a custom container.
 
 ### iOS에서 주요 네비게이션 스타일 3가지
 1. Hierarchical Navigation
-<div style="text-align : center;">
+<div align="center">
 <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/NavigationHierarchical-Graphic_2x.png" width="400">
 </div>
 
@@ -67,7 +67,7 @@ Uses custom animation to present content in a custom container.
 
 2. Flat Navigation
 
-<div style="text-align : center;">
+<div align="center">
 <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/NavigationFlat-Graphic_2x.png" width="400">
 </div>
 
@@ -78,7 +78,7 @@ Uses custom animation to present content in a custom container.
 
 3. Content-Driven or Experience-Driven Navigation
 
-<div style="text-align : center;">
+<div align="center">
 <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/NavigationExperienceDriven-Graphic_2x.png" width="400">
 </div>
 
