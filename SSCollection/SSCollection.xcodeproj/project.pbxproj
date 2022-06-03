@@ -12,6 +12,7 @@
 		10085AE9284A203300D7333E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10085AE7284A203300D7333E /* Main.storyboard */; };
 		10085AEB284A203500D7333E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10085AEA284A203500D7333E /* Assets.xcassets */; };
 		10085AEE284A203500D7333E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10085AEC284A203500D7333E /* LaunchScreen.storyboard */; };
+		10085AF7284A225F00D7333E /* IntroduceSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10085AF6284A225F00D7333E /* IntroduceSubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		10085AEA284A203500D7333E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10085AED284A203500D7333E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10085AEF284A203500D7333E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10085AF6284A225F00D7333E /* IntroduceSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroduceSubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				10085AE7284A203300D7333E /* Main.storyboard */,
+				10085AF6284A225F00D7333E /* IntroduceSubViewController.swift */,
 				10085AEA284A203500D7333E /* Assets.xcassets */,
 				10085AEF284A203500D7333E /* Info.plist */,
 				10085AF5284A207600D7333E /* SupportingFile */,
@@ -145,6 +148,7 @@
 			files = (
 				10085AE2284A203300D7333E /* AppDelegate.swift in Sources */,
 				10085AE4284A203300D7333E /* SceneDelegate.swift in Sources */,
+				10085AF7284A225F00D7333E /* IntroduceSubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
