@@ -1,6 +1,8 @@
 # Combine
 
 <span style="color:pink">**iOS 13.0+**</span>
+<img src="https://img.shields.io/badge/iOS 13.0+-000000?style=flat&logo=iOS&logoColor=white"/>
+
 
 ## 동기(synchronous)와 비동기(Asynchronous)
 ### 동기(synchronous)
@@ -31,8 +33,10 @@
 
 ### Publisher
 Defines how values and errors are produced
-<br>Value type
-<br>Allows registration of a `Subscriber`
+###### 값과 에러를 만들어내는 방법이 정의되어 있는 객체
+Value type
+###### 이 프로토콜을 채택하는 타입은 값타입(struct)이어야 함
+Allows registration of a `Subscriber`
 
 ```swift
 protocol Publisher {
@@ -46,7 +50,10 @@ protocol Publisher {
 
 ### Subscriber
 Receives values and a completion
-<br>Reference type
+###### Publisher로부터 값을 받아서 사용하는 객체
+Reference type
+###### identity가 있어야 되기 때문에 참조 타입(class)이어야 함
+<br>
 
 ```swift
 protocol Subscriber {
@@ -90,3 +97,4 @@ Adopts `Publisher`
 
 ## 참고
 - https://developer.apple.com/videos/play/wwdc2019/722/
+- https://jcsoohwancho.github.io/2020-01-18-Combine-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0(1)-Overview/
