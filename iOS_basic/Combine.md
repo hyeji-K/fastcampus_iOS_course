@@ -1,8 +1,9 @@
 # Combine
 
-<span style="color:pink">**iOS 13.0+**</span>
-<img src="https://img.shields.io/badge/iOS_13.0+-000000?style=flat&logo=iOS&logoColor=white"/>
+<!-- <span style="color:pink">**iOS 13.0+**</span> -->
+<img alt="iOS 13.0+" src ="https://img.shields.io/badge/13.0+-000000?&style=flat&logo=iOS&logoColor=white">
 
++ 프로토콜, unowned self, 
 
 ## 동기(synchronous)와 비동기(Asynchronous)
 ### 동기(synchronous)
@@ -91,11 +92,72 @@ Adopts `Publisher`
 <br>Value type
 
 <div align="center">
+<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/Combine2.png" width="400">
+</div>
+
+<div align="center">
 <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/operator.png" width="800">
 </div>
 
+<br>
 
+## Publisher 구현
+Publisher를 직접 구현하기 보단, Combine Framework가 제공하는 방식으로 구현하기를 권장함
+- Subject (`PassthroughSubject`, `CurrentValueSubject`)
+- @Published
 
+<br>
+
+### Subject
+`send(_:)` 메서드를 호출하여 값을 주입시킬 수 있는 Publisher
+
+1. PassthroughSubject
+
+    ```swift
+    final class PassthroughSubject<Output, Failure> where Failure : Error
+    ```
+    - 값이 주입되는 시점에서만 Subscriber가 새로운 값을 받을 수 있게 됨
+    - 초기 값이나 최근 값의 버퍼를 가지고 있지 않음
+
+<br>
+
+2. CurrentValueSubject
+
+    ```swift
+    final class CurrentValueSubject<Output, Failure> where Failure : Error
+    ```
+    - 초기 값이나 최근 값의 버퍼를 가지고 있음
+    - 그래서 최근 값을 전달 후에 받은 값을 전달함
+
+<br>
+
+### @Published
+클래스의 프로퍼티인 경우, 앞에 `@Published` 를 적어서 Publisher를 만들 수 있음
+<br>`$`를 사용해서 Publisher에 접근할 수 있음
+<br>데이터의 변경이 잦은 것에 사용됨
+
+<br>
+
+## Subscriber 구현
+- `sink(receiveCompletion:receiveValue:)`는 새로운 값를 받을 때마다 임의의 클로저를 실행
+
+- `assign(to:on:)`은 새로 받은 값을 주어진 인스턴스의 키패스에 할당
+
+### Subscription
+Subscriber가 Publisher를 구독
+<br>Cancellable 프로토콜을 따르고 있기 때문에, `cancel()`로 구독을 취소할 수 있음
+
+<br>
+
+## Scheduler
+언제(시간), 어떻게(스레드) 클로저를 실행할 지 정해주는 프로토콜
+<br>기본적으로 Scheduler는 element가 생성된 스레드와 동일한 스레드를 사용
+
+- `subscribe(on:)`은 Publisher가 어느 스레드에서 수행할 지 결정해주는 것 
+
+- `receive(on:)`을 이용해서 operator, subscriber 가 어느 스레드에서 수행할 지 결정해주는 것
+
+<br>
 
 ## 참고
 - https://developer.apple.com/videos/play/wwdc2019/722/
