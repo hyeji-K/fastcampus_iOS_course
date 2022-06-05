@@ -1,9 +1,7 @@
 # Combine
 
-<!-- <span style="color:pink">**iOS 13.0+**</span> -->
-<img alt="iOS 13.0+" src ="https://img.shields.io/badge/13.0+-000000?&style=flat&logo=iOS&logoColor=white">
-
-+ 프로토콜, unowned self, 
+<span style="color:pink">**iOS 13.0+**</span>
+<!-- <img alt="iOS 13.0+" src ="https://img.shields.io/badge/13.0+-000000?&style=flat&logo=iOS&logoColor=white"> -->
 
 ## 동기(synchronous)와 비동기(Asynchronous)
 ### 동기(synchronous)
