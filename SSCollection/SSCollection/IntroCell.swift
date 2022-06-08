@@ -24,8 +24,13 @@ class IntroCell: UICollectionViewCell {
  
     override func awakeFromNib() {
         super.awakeFromNib()
-//        roundView.cornerRadius = 10
-        bottomView.backgroundColor = .gray
+        roundView.layer.cornerRadius = 5
+        thumbnailImageView.layer.cornerRadius = 5
+        // 투명도가 있는 뷰 하위에 추가 되는 뷰에서 투명도 영향 받지 않기
+        bottomView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        bottomView.layer.cornerRadius = 5
+        appImageView.layer.cornerRadius = 5
+        appNameLabel.textColor = .white
         
     }
     
@@ -36,13 +41,15 @@ class IntroCell: UICollectionViewCell {
         descriptionLabel.text = intro.description
         thumbnailImageView.image = UIImage(named: intro.thumbnailImageName)
         
-        let url = URL(string: intro.appName)
-        
-        if let data = try? Data(contentsOf: url!) {
-            DispatchQueue.main.async {
-                self.appImageView.image = UIImage(data: data)
+        if let url = URL(string: intro.appImage) {
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.main.async {
+                    self.appImageView.image = UIImage(data: data)
+                }
+            } catch {
+                print("appImage download failed")
             }
-            
         }
         
         appNameLabel.text = intro.appName
