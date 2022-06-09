@@ -40,6 +40,8 @@ class IntroduceSubViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Apps"
 
         // First collectionView
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: introCollectionView, cellProvider: { collectionView, indexPath, item in
