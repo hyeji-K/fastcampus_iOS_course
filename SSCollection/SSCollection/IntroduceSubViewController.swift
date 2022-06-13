@@ -89,6 +89,7 @@ class IntroduceSubViewController: UIViewController {
         
         listCollectionView.alwaysBounceVertical = false
         
+        
     }
     
     // TODO: 마지막 그룹 안에 아이템이 1개거나 2개일 시 trailing 값이 적용되지 않음
@@ -123,7 +124,7 @@ class IntroduceSubViewController: UIViewController {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92), heightDimension: .absolute(290))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92), heightDimension: .absolute(400))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
         
