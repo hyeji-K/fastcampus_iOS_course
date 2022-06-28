@@ -23,11 +23,13 @@ class IntroduceSubViewController: UIViewController {
     enum Sectiontwo: CaseIterable {
         case ott
         case productivity
+        case music
         
         var title: String {
             switch self {
             case .ott: return "OTT Service"
             case .productivity: return "Productivity Service"
+            case .music: return "Music Service"
             }
         }
     }
@@ -36,6 +38,7 @@ class IntroduceSubViewController: UIViewController {
     
     let ottList: [Contents] = Contents.ott
     let productivityList: [Contents] = Contents.productivity
+    let musicList: [Contents] = Contents.music
     var dataSourcetwo: UICollectionViewDiffableDataSource<Sectiontwo, Itemtwo>!
     
     override func viewDidLoad() {
@@ -58,6 +61,7 @@ class IntroduceSubViewController: UIViewController {
         dataSource.apply(snapshot)
         
         introCollectionView.collectionViewLayout = layout()
+        introCollectionView.alwaysBounceVertical = false
         
         // Second collectionView
         dataSourcetwo = UICollectionViewDiffableDataSource<Sectiontwo, Itemtwo>(collectionView: listCollectionView, cellProvider: { collectionView, indexPath, item in
@@ -80,9 +84,10 @@ class IntroduceSubViewController: UIViewController {
         }
         
         var listsnapshot = NSDiffableDataSourceSnapshot<Sectiontwo, Itemtwo>()
-        listsnapshot.appendSections([.ott, .productivity])
+        listsnapshot.appendSections([.ott, .productivity, .music])
         listsnapshot.appendItems(ottList, toSection: .ott)
         listsnapshot.appendItems(productivityList, toSection: .productivity)
+        listsnapshot.appendItems(musicList, toSection: .music)
         dataSourcetwo.apply(listsnapshot)
         
         listCollectionView.collectionViewLayout = layouttwo()
@@ -124,7 +129,7 @@ class IntroduceSubViewController: UIViewController {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92), heightDimension: .absolute(400))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.92), heightDimension: .absolute(300))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
         

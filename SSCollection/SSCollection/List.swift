@@ -39,4 +39,13 @@ extension Contents {
         Contents(appImage: "example", appName: "E+", appDescription: "Endless entertainment"),
         Contents(appImage: "example", appName: "F+", appDescription: "Endless entertainment"),
     ]
+    
+    static let music: [Contents] = [
+        Contents(appImage: "example", appName: "A", appDescription: "Endless entertainment"),
+        Contents(appImage: "example", appName: "B+", appDescription: "Endless entertainment"),
+        Contents(appImage: "example", appName: "C+", appDescription: "Endless entertainment"),
+        Contents(appImage: "example", appName: "D+", appDescription: "Endless entertainment"),
+        Contents(appImage: "example", appName: "E+", appDescription: "Endless entertainment"),
+        Contents(appImage: "example", appName: "F+", appDescription: "Endless entertainment"),
+    ]
 }
