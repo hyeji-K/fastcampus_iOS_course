@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        profileImageView.layer.cornerRadius = 50
+        profileImageView.layer.cornerRadius = 40
     }
     
     private func embedSearchControl() {
