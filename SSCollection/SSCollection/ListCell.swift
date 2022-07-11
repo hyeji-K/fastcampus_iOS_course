@@ -13,6 +13,13 @@ class ListCell: UICollectionViewCell {
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var appDescriptionLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        appImageView.layer.cornerRadius = 15
+        appImageView.layer.borderWidth = 0.5
+        appImageView.layer.borderColor = UIColor.systemGray3.cgColor
+    }
+    
     func configure(_ list: Contents) {
         
 //        if let url = URL(string: list.appImage) {
