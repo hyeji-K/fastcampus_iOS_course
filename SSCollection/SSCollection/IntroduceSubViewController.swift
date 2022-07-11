@@ -24,12 +24,16 @@ class IntroduceSubViewController: UIViewController {
         case ott
         case productivity
         case music
+        case books
+        case shopping
         
         var title: String {
             switch self {
             case .ott: return "OTT Service"
             case .productivity: return "Productivity Service"
             case .music: return "Music Service"
+            case .books: return "Books"
+            case .shopping: return "Shopping"
             }
         }
     }
@@ -39,6 +43,8 @@ class IntroduceSubViewController: UIViewController {
     let ottList: [Contents] = Contents.ott
     let productivityList: [Contents] = Contents.productivity
     let musicList: [Contents] = Contents.music
+    let booksList: [Contents] = Contents.books
+    let shoppingList: [Contents] = Contents.shopping
     var dataSourcetwo: UICollectionViewDiffableDataSource<Sectiontwo, Itemtwo>!
     
     override func viewDidLoad() {
@@ -84,10 +90,12 @@ class IntroduceSubViewController: UIViewController {
         }
         
         var listsnapshot = NSDiffableDataSourceSnapshot<Sectiontwo, Itemtwo>()
-        listsnapshot.appendSections([.ott, .productivity, .music])
+        listsnapshot.appendSections([.ott, .productivity, .music, .books, .shopping])
         listsnapshot.appendItems(ottList, toSection: .ott)
         listsnapshot.appendItems(productivityList, toSection: .productivity)
         listsnapshot.appendItems(musicList, toSection: .music)
+        listsnapshot.appendItems(booksList, toSection: .books)
+        listsnapshot.appendItems(shoppingList, toSection: .shopping)
         dataSourcetwo.apply(listsnapshot)
         
         listCollectionView.collectionViewLayout = layouttwo()

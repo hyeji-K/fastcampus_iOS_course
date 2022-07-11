@@ -308,7 +308,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNw-pv-aSz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1950"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-VW-mat">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -468,7 +468,7 @@
                                                 </cells>
                                             </collectionView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a3O-Od-6Dj">
-                                                <rect key="frame" x="0.0" y="320" width="414" height="1180"/>
+                                                <rect key="frame" x="0.0" y="320" width="414" height="1630"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Jr-Ap-mMF">
                                                     <size key="itemSize" width="414" height="106"/>
@@ -593,7 +593,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Tlm-VW-mat" secondAttribute="trailing" id="KF8-qM-Dzc"/>
-                                            <constraint firstAttribute="height" constant="1500" id="RqR-2a-SWR"/>
+                                            <constraint firstAttribute="height" constant="1950" id="RqR-2a-SWR"/>
                                             <constraint firstItem="a3O-Od-6Dj" firstAttribute="leading" secondItem="cNw-pv-aSz" secondAttribute="leading" id="Tm4-LV-wrF"/>
                                             <constraint firstItem="Tlm-VW-mat" firstAttribute="top" secondItem="cNw-pv-aSz" secondAttribute="top" id="WSw-3o-COC"/>
                                             <constraint firstAttribute="bottom" secondItem="a3O-Od-6Dj" secondAttribute="bottom" id="ZXG-WU-fJD"/>
