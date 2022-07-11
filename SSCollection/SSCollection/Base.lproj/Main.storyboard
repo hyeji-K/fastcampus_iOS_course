@@ -415,7 +415,7 @@
                                                                                             </buttonConfiguration>
                                                                                         </button>
                                                                                     </subviews>
-                                                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="trailing" secondItem="fHx-m1-llH" secondAttribute="trailing" constant="15" id="1tI-At-dha"/>
                                                                                         <constraint firstItem="j33-QO-MqE" firstAttribute="leading" secondItem="xyx-sd-HX4" secondAttribute="leading" constant="15" id="KOF-g7-jdK"/>
@@ -673,6 +673,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
