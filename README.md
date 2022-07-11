@@ -41,7 +41,7 @@ Combine실습
 <br>
 
 ### 4. Network
-Uploading...
+[Network](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/Network.md)
 
 <br>
 
@@ -72,4 +72,4 @@ Uploading...
 SSCollection (앱스토어 클론 앱)
 - 리스트 및 그리드 응용 실습
 
-<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/SSCollection.gif" width="400">
+<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/SSCollection.gif" width="300">
