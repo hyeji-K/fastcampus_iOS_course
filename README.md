@@ -69,4 +69,7 @@ Uploading...
 
 ### 프로젝트
 
-SymbolRoller App
+SSCollection (앱스토어 클론 앱)
+- 리스트 및 그리드 응용 실습
+
+<img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/SSCollection.gif" width="400">
