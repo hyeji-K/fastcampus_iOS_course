@@ -27,7 +27,7 @@ class IntroCell: UICollectionViewCell {
         roundView.layer.cornerRadius = 5
         thumbnailImageView.layer.cornerRadius = 5
         // 투명도가 있는 뷰 하위에 추가 되는 뷰에서 투명도 영향 받지 않기
-        bottomView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        bottomView.backgroundColor = UIColor.systemGray.withAlphaComponent(0.1)
         bottomView.layer.cornerRadius = 5
         appImageView.layer.cornerRadius = 5
         appNameLabel.textColor = .white
