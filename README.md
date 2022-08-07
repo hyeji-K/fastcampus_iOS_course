@@ -36,31 +36,25 @@
 
 [Combine이란?](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/Combine.md)
 
-Combine실습
+Combine 실습
 
 <br>
 
 ### 4. Network
 [Network](https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/iOS_basic/Network.md)
 
+Network 실습
+
 <br>
 
 ### 5. MVVM 디자인 패턴
-Uploading...
+[MVVM]()
+
+MVVM 실습
 
 <br>
 
 ### 6. SwiftUI
-Uploading...
-
-<br>
-
-### 7. CI/CD
-Uploading...
-
-<br>
-
-### 8. TDD
 Uploading...
 
 <br>
@@ -73,3 +67,6 @@ SSCollection (앱스토어 클론 앱)
 - 리스트 및 그리드 응용 실습
 
 <img src="https://github.com/hyeji-K/fastcampus_iOS_course/blob/main/image/SSCollection.gif" width="300">
+
+(날씨 앱)
+- 네트워크 및 컴바인 응용 실습
